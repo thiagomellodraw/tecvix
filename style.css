@@ -536,9 +536,9 @@ a {
 
 .about-iso-overlay {
     position: absolute;
-    bottom: -20px;
-    left: -20px;
-    height: 100px; /* Aumentado conforme solicitado */
+    bottom: -30px;
+    left: -30px;
+    height: 140px; /* Aumentado de 100px para 140px */
     width: auto;
     object-fit: contain;
     z-index: 10;
@@ -1054,7 +1054,7 @@ a {
 
 /* ISO Certification Seal in Contacts */
 .contact-iso-seal {
-    height: 80px;
+    height: 120px; /* Aumentado de 80px para 120px */
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45));
@@ -1365,9 +1365,9 @@ textarea.form-input {
     }
     
     .about-iso-overlay {
-        bottom: -10px;
-        left: -10px;
-        height: 80px;
+        bottom: -15px;
+        left: -15px;
+        height: 100px; /* Aumentado de 80px para 100px */
     }
     
     .mvv-grid {
