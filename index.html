@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECVIX Engenharia | Reparo Naval, Offshore e Serviços Industriais</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A TECVIX Engenharia é especializada em engenharia, reparo naval, manutenção offshore e serviços industriais com excelência técnica, segurança e conformidade normativa (NR-10, NR-12, NR-13).">
+    <meta name="keywords" content="tecvix engenharia, reparo naval, offshore, manutenção industrial, nr10, nr12, nr13, arquitetura naval, caldeiraria, isolamento termico, inspeção de maquinas, rio de janeiro">
+    <meta name="author" content="TECVIX Engenharia">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tecvixengenharia.com.br/">
+    <meta property="og:title" content="TECVIX Engenharia | Reparo Naval e Offshore">
+    <meta property="og:description" content="Soluções completas de engenharia, reparo naval e serviços industriais. Excelência técnica e conformidade legal com foco em resultados.">
+    <meta property="og:image" content="assets/hero_background.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icone.png">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#home" class="logo" aria-label="TECVIX Engenharia Home">
+                <img src="assets/logo.png" alt="Logo TECVIX Engenharia" class="logo-img">
+            </a>
+            
+            <nav class="nav" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <a href="#contato" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.85rem; margin-left: 0.5rem;">Fale Conosco</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-scanner">
+            <!-- Reality Layer -->
+            <div class="hero-layer layer-reality">
+                <div class="hero-bg-img" style="background-image: url('assets/hero_background.png');"></div>
+            </div>
+            
+            <!-- Blueprint Layer -->
+            <div class="hero-layer layer-blueprint">
+                <div class="hero-bg-img blueprint-effect" style="background-image: url('assets/hero_background.png');"></div>
+                <div class="blueprint-grid"></div>
+                
+                <!-- HUD Overlays (Ficam ocultas na transição) -->
+                <div class="hud-box hud-top-left">
+                    <span class="hud-tag">SISTEMA DE EXTRAÇÃO DE ENERGIA PROFUNDA: ATIVO</span>
+                    <span>PROFUNDIDADE: 4000M</span>
+                    <span>FLUXO DE DADOS: ESTÁVEL (98.4%)</span>
+                    <span>TECVIX OPERATIONAL HUB</span>
+                </div>
+                
+                <div class="hud-box hud-bottom-right">
+                    <span class="hud-tag">NAVIO EM POSIÇÃO DE TRANSFERÊNCIA</span>
+                    <span class="hud-coords">LAT: 22° 54' 13" S</span>
+                    <span class="hud-coords">LONG: 43° 12' 35" W</span>
+                    <span>CONEXÃO TELEMÉTRICA: SINAL FORTE</span>
+                </div>
+                <!-- Tech Drawing SVG Overlay for Hero -->
+                <svg class="blueprint-drawing-overlay" viewBox="0 0 1000 700" preserveAspectRatio="none">
+                    <rect x="30" y="30" width="940" height="640" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="5 5" />
+                    <circle cx="500" cy="350" r="220" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                    <line x1="500" y1="10" x2="500" y2="690" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="3 3" />
+                    <line x1="10" y1="350" x2="990" y2="350" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="3 3" />
+                    <text x="520" y="100" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">GRID LINE A-12</text>
+                    <text x="520" y="320" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">DEPTH = -250m</text>
+                    <text x="60" y="335" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">LAT: 22° 54' S</text>
+                    <text x="60" y="355" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">LONG: 43° 12' W</text>
+                    <!-- Corner ticks -->
+                    <path d="M 15 30 L 15 15 L 30 15" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+                    <path d="M 985 30 L 985 15 L 970 15" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+                    <path d="M 15 670 L 15 685 L 30 685" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+                    <path d="M 985 670 L 985 685 L 970 685" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+                </svg>
+            </div>
+            
+            <!-- Global Dark Overlay -->
+            <div class="hero-overlay"></div>
+            
+            <!-- Laser Line -->
+            <div class="hero-laser"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">Soluções de Alta Performance</span>
+                <h1 class="hero-title">Engenharia, <br><span class="text-accent">Reparo Naval</span> & Offshore</h1>
+                <p class="hero-desc">Soluções completas com conformidade normativa, mitigação de riscos e excelência técnica para a continuidade operacional dos seus ativos.</p>
+                <div class="hero-btns">
+                    <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+                    <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos Section -->
+    <section class="section-padding" id="quem-somos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2 class="section-title gradient-text">Experiência prática dentro do ambiente operacional</h2>
+                    <p class="about-p">A <strong>TECVIX Engenharia</strong> é uma empresa especializada em reparo naval, manutenção offshore e serviços industriais, formada por profissionais com ampla experiência prática nos setores em que atua.</p>
+                    <p class="about-p">Nossa história foi construída dentro do ambiente operacional, acompanhando de perto os desafios da indústria, das embarcações e das operações offshore. Essa vivência nos permite compreender rapidamente as necessidades de cada cliente e desenvolver soluções seguras, eficientes e compatíveis com a realidade de cada operação.</p>
+                    <p class="about-p">Atuamos com foco na qualidade da execução, no cumprimento dos prazos e na busca constante pelos melhores resultados, sempre alinhando conhecimento técnico, planejamento e responsabilidade operacional. Buscamos ser um parceiro confiável, oferecendo suporte próximo e respostas ágeis.</p>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-img-wrapper">
+                        <img src="assets/about_image.png" alt="Equipe de engenharia da TECVIX" class="about-img" loading="lazy">
+                    </div>
+                    <img src="assets/iso_certification.png" alt="Certificação IATF 16949 ABS Quality Evaluations" class="about-iso-overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values (MVV) Section -->
+    <section class="section-padding mvv-bg">
+        <div class="container">
+            <div class="mvv-grid">
+                <!-- Missão -->
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <h3 class="mvv-title text-accent">Missão</h3>
+                    <p class="mvv-text">Entregar soluções de engenharia, reparo naval, manutenção offshore e serviços industriais com excelência técnica, segurança e eficiência operacional, contribuindo para a continuidade das operações de nossos clientes.</p>
+                </div>
+                
+                <!-- Visão -->
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="mvv-title text-accent">Visão</h3>
+                    <p class="mvv-text">Ser reconhecida como uma referência nos setores naval, offshore e industrial pela qualidade dos serviços prestados, pela confiabilidade das nossas entregas e pela capacidade de transformar desafios operacionais em soluções eficientes.</p>
+                </div>
+                
+                <!-- Valores -->
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-17h-2v2h2V5zm-2 4h2v6h-2V9zm0 8h2v2h-2v-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="mvv-title text-accent">Valores</h3>
+                    <ul class="values-list">
+                        <li>Segurança como princípio fundamental;</li>
+                        <li>Ética, transparência e respeito;</li>
+                        <li>Compromisso com a qualidade;</li>
+                        <li>Responsabilidade e profissionalismo;</li>
+                        <li>Valorização do conhecimento prático;</li>
+                        <li>Agilidade e foco nas soluções.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfólio de Soluções</span>
+                <h2 class="section-title gradient-text">Nossos Serviços</h2>
+                <p class="section-desc">Atuação multissetorial com engenharia certificada, corpo operacional treinado e conformidade regulatória rigorosa.</p>
+            </div>
+            
+            <div class="services-tabs-container">
+                <!-- Navigation Tabs -->
+                <div class="tabs-nav" role="tablist">
+                    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-engenharia" id="tab-engenharia">Engenharia & NRs</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-naval" id="tab-naval">Serviços Navais</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-inspecao" id="tab-inspecao">Inspeções Técnicas</button>
+                </div>
+                
+                <!-- Tab Panel 1: Engenharia -->
+                <div class="tab-panel active" id="panel-engenharia" role="tabpanel" aria-labelledby="tab-engenharia">
+                    <div class="panel-intro-grid">
+                        <div class="panel-info-text">
+                            <h3 class="gradient-text-accent" style="font-size: 1.8rem; margin-bottom: 1rem;">Soluções em Integridade e Conformidade</h3>
+                            <p class="panel-description">A TECVIX Engenharia oferece soluções completas em inspeção, adequação e integridade de equipamentos industriais, navais e offshore. Nossos serviços são executados por engenheiros especializados, com foco na conformidade normativa, mitigação de riscos e excelência operacional.</p>
+                            <p class="panel-description" style="margin-top: 1rem;">Desenvolvemos projetos, inspeções técnicas, laudos e relatórios respaldados por normas nacionais e internacionais, garantindo a longevidade física e a segurança jurídica de suas instalações.</p>
+                        </div>
+                        <div class="panel-img-wrapper">
+                            <img src="assets/inspection_services.png" alt="Equipamento industrial e manômetro sendo inspecionados por engenheiro" class="panel-img" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="services-grid-3">
+                        <div class="service-card">
+                            <span class="nr-badge nr-10">Conformidade Legal</span>
+                            <span class="service-num">10</span>
+                            <h4 class="service-card-title">Segurança Elétrica (NR-10)</h4>
+                            <p class="service-card-desc">Requisitos essenciais para projetos, instalações e manutenções em sistemas elétricos. Proteção de profissionais e conformidade legal de instalações elétricas.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="nr-badge nr-12">Conformidade Legal</span>
+                            <span class="service-num">12</span>
+                            <h4 class="service-card-title">Segurança de Máquinas (NR-12)</h4>
+                            <p class="service-card-desc">Critérios de segurança para fabricação, instalação, operação e manutenção de máquinas e equipamentos industriais, reduzindo riscos operacionais.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="nr-badge nr-13">Conformidade Legal</span>
+                            <span class="service-num">13</span>
+                            <h4 class="service-card-title">Vasos e Caldeiras (NR-13)</h4>
+                            <p class="service-card-desc">Inspeções de segurança e integridade mecânica em caldeiras, vasos de pressão, tubulações de vapor e tanques metálicos de armazenamento.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab Panel 2: Naval -->
+                <div class="tab-panel" id="panel-naval" role="tabpanel" aria-labelledby="tab-naval">
+                    <div class="panel-intro-grid">
+                        <div class="panel-info-text">
+                            <h3 class="gradient-text-accent" style="font-size: 1.8rem; margin-bottom: 1rem;">Manutenção de Embarcações e Estruturas Offshore</h3>
+                            <p class="panel-description">Executamos reparos mecânicos, acabamento interno e recuperação estrutural diretamente no ambiente operacional das embarcações e plataformas. Nosso pessoal possui certificações marítimas e offshore atualizadas (salvatagem, HUET, etc.).</p>
+                        </div>
+                        <div class="panel-img-wrapper">
+                            <img src="assets/naval_repair.png" alt="Serviço de solda em estaleiro naval com faíscas" class="panel-img" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="services-grid-3">
+                        <div class="service-card">
+                            <span class="service-num">01</span>
+                            <h4 class="service-card-title">Arquitetura</h4>
+                            <p class="service-card-desc">Desenvolvimento de projetos arquitetônicos inovadores e técnicos que unem funcionalidade, segurança e otimização inteligente de espaços.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="service-num">02</span>
+                            <h4 class="service-card-title">Carpintaria & Marcenaria Naval</h4>
+                            <p class="service-card-desc">Reparo, fabricação e acabamento em acomodações de embarcações e plataformas, garantindo conforto e resistência sob rigorosos padrões.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="service-num">03</span>
+                            <h4 class="service-card-title">Serviços Civis</h4>
+                            <p class="service-card-desc">Obras civis e revestimentos, instalação de pisos cerâmicos, vinílicos e tipo moeda de alta resistência em áreas habitáveis e operacionais.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="service-num">04</span>
+                            <h4 class="service-card-title">Caldeiraria Leve e Pesada</h4>
+                            <p class="service-card-desc">Fabricação, montagem e recuperação estrutural metálica em aço carbono e inox para suportes de tubulação, guarda-corpos e acessos.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="service-num">05</span>
+                            <h4 class="service-card-title">Reparo de Tubulações e Cascos</h4>
+                            <p class="service-card-desc">Adequação e soldagem em tubulações industriais, válvulas e chaparias de casco em aço carbono, inox e fibra de vidro (FRP).</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <span class="service-num">06</span>
+                            <h4 class="service-card-title">Isolamento Térmico</h4>
+                            <p class="service-card-desc">Isolamento em motores, anteparas e tubulações de vapor com colchões térmicos removíveis sob medida e sistemas em elastômero Armaflex.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab Panel 3: Inspeção -->
+                <div class="tab-panel" id="panel-inspecao" role="tabpanel" aria-labelledby="tab-inspecao">
+                    <div class="insp-card-full">
+                        <div class="insp-left">
+                            <span class="section-tag" style="margin-bottom: 0.5rem;">Segurança Técnica</span>
+                            <h3 class="gradient-text">Inspeção de Máquinas e Equipamentos</h3>
+                            <p class="mvv-text">Oferecemos serviços especializados de inspeção, avaliação e adequação de máquinas, equipamentos e instalações, em conformidade com as normas NR-10, NR-12 e NR-13. Por meio de análises criteriosas, laudos e apreciações de risco, mitigamos falhas operacionais e acidentes.</p>
+                            <div class="insp-nrs">
+                                <span class="nr-badge nr-10">NR-10</span>
+                                <span class="nr-badge nr-12">NR-12</span>
+                                <span class="nr-badge nr-13">NR-13</span>
+                            </div>
+                        </div>
+                        <div class="insp-right">
+                            <p style="margin-bottom: 1.5rem;">Nossa equipe técnica utiliza equipamentos calibrados de alta precisão (ultrassom de parede, medidores de espessura, testes de estanqueidade e termografia) para verificar a real integridade mecânica e operacional de vasos de pressão, redes elétricas e maquinário.</p>
+                            <p>Fornecemos ART (Anotação de Responsabilidade Técnica), Livro de Registro de Segurança obrigatório e projetos detalhados de adequação física para que a sua empresa opere 100% regularizada perante o Ministério do Trabalho e órgãos fiscalizadores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Clientes Section -->
+    <section class="clients-section">
+        <div class="container">
+            <h3 class="clients-title">Parceiros & Clientes atendidos</h3>
+        </div>
+        <div class="slider-container">
+            <div class="slider-track">
+                <!-- Slide 1: FIOCRUZ -->
+                <div class="slide">
+                    <img src="assets/clientes/FIOCRUZ.webp" alt="Logo FIOCRUZ" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 2: TRANSHIP -->
+                <div class="slide">
+                    <img src="assets/clientes/TRANSHIP.webp" alt="Logo TRANSHIP" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 3: Ancine -->
+                <div class="slide">
+                    <img src="assets/clientes/ancine.webp" alt="Logo Ancine" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 4: Astromaritima -->
+                <div class="slide">
+                    <img src="assets/clientes/astromaritima-removebg-preview.png" alt="Logo Astromarítima" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 5: Brufer -->
+                <div class="slide">
+                    <img src="assets/clientes/brufer-removebg-preview.png" alt="Logo Brufer" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 6: Ebmil -->
+                <div class="slide">
+                    <img src="assets/clientes/ebmil.webp" alt="Logo Ebmil" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 7: Imbel -->
+                <div class="slide">
+                    <img src="assets/clientes/imbel.webp" alt="Logo Imbel" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 8: Login -->
+                <div class="slide">
+                    <img src="assets/clientes/login.webp" alt="Logo Log-In" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 9: Marinha -->
+                <div class="slide">
+                    <img src="assets/clientes/marinha.webp" alt="Logo Marinha do Brasil" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 10: Sea -->
+                <div class="slide">
+                    <img src="assets/clientes/sea-removebg-preview.png" alt="Logo Sea" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 11: Triunfo -->
+                <div class="slide">
+                    <img src="assets/clientes/Triunfo_NOVO_horizontal-branca.png" alt="Logo Triunfo" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 12: Cliente 12 -->
+                <div class="slide">
+                    <img src="assets/clientes/images-removebg-preview.png" alt="Logo Parceiro" class="client-logo" loading="lazy">
+                </div>
+                
+                <!-- Cópia das Logos para Rolagem Infinita -->
+                <!-- Slide 1 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/FIOCRUZ.webp" alt="Logo FIOCRUZ" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 2 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/TRANSHIP.webp" alt="Logo TRANSHIP" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 3 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/ancine.webp" alt="Logo Ancine" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 4 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/astromaritima-removebg-preview.png" alt="Logo Astromarítima" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 5 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/brufer-removebg-preview.png" alt="Logo Brufer" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 6 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/ebmil.webp" alt="Logo Ebmil" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 7 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/imbel.webp" alt="Logo Imbel" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 8 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/login.webp" alt="Logo Log-In" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 9 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/marinha.webp" alt="Logo Marinha do Brasil" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 10 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/sea-removebg-preview.png" alt="Logo Sea" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 11 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/Triunfo_NOVO_horizontal-branca.png" alt="Logo Triunfo" class="client-logo" loading="lazy">
+                </div>
+                <!-- Slide 12 Copy -->
+                <div class="slide">
+                    <img src="assets/clientes/images-removebg-preview.png" alt="Logo Parceiro" class="client-logo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="section-padding" id="contato">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Info Column -->
+                <div class="contact-info">
+                    <span class="section-tag">Canais de Atendimento</span>
+                    <h2 class="contact-info-title gradient-text">Estamos prontos para atender sua demanda</h2>
+                    <p class="contact-info-desc">Fale com nossa equipe técnica e solicite orçamentos, visitas de campo ou análise de conformidade de seus ativos.</p>
+                    
+                    <div class="contact-details">
+                        <!-- E-mail -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-content">
+                                <span>E-mail Corporativo</span>
+                                <a href="mailto:tecvix@texvixengenharia.com">tecvix@texvixengenharia.com</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Telefone / WhatsApp -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon" style="background: rgba(46, 204, 113, 0.1); color: #2ecc71; display: flex; align-items: center; justify-content: center;">
+                                <svg viewBox="0 0 24 24" style="fill: currentColor; width: 20px; height: 20px;">
+                                    <path d="M19.005 3.175C17.252 1.42 14.927.453 12.443.453c-4.838 0-8.773 3.935-8.775 8.777 0 1.547.404 3.056 1.171 4.386L3.66 20l6.305-1.654a8.736 8.736 0 004.254 1.11h.004c4.837 0 8.773-3.936 8.775-8.779a8.72 8.72 0 00-2.5-6.223h-.002zM12.443 16.59c-1.31 0-2.597-.352-3.722-1.018l-.267-.159-3.743.981.999-3.649-.174-.277a7.294 7.294 0 01-1.116-3.89c.002-4.02 3.273-7.292 7.296-7.292 1.948 0 3.779.758 5.155 2.136a7.24 7.24 0 012.13 5.16c-.002 4.022-3.273 7.294-7.298 7.294zm3.999-5.467c-.22-.11-1.299-.64-1.5-.714-.202-.074-.349-.11-.497.11-.148.22-.574.714-.704.864-.13.15-.26.166-.48.056-.22-.11-.929-.342-1.77-1.091-.653-.583-1.093-1.303-1.222-1.522-.13-.22-.014-.339.096-.449.1-.1.22-.256.33-.383.11-.127.147-.22.22-.365.074-.146.037-.274-.018-.384-.056-.11-.497-1.2-.68-1.643-.18-.432-.377-.373-.497-.379-.12-.006-.259-.007-.397-.007-.139 0-.365.052-.556.26-.191.208-.73.714-.73 1.743 0 1.03.749 2.02.855 2.166.107.146 1.474 2.25 3.57 3.153.499.215.888.343 1.192.44.502.159.96.137 1.32.083.402-.06 1.299-.53 1.482-1.042.18-.512.18-.952.127-1.042-.054-.09-.202-.146-.422-.256z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-content">
+                                <span>WhatsApp Técnico</span>
+                                <a href="https://wa.me/5521995310777" target="_blank" rel="noopener noreferrer">+55 (21) 99531-0777</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Instagram -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon" style="background: rgba(224, 76, 120, 0.1); color: #e04c78; display: flex; align-items: center; justify-content: center;">
+                                <svg viewBox="0 0 24 24" style="fill: currentColor; width: 20px; height: 20px;">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-content">
+                                <span>Instagram Oficial</span>
+                                <a href="https://www.instagram.com/tecvixengenharia/" target="_blank" rel="noopener noreferrer">@tecvixengenharia</a>
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon" style="background: rgba(0, 119, 181, 0.1); color: #0077b5;">
+                                <svg viewBox="0 0 24 24" style="fill: currentColor; width: 20px; height: 20px;">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-item-content">
+                                <span>Conecte-se</span>
+                                <a href="https://www.linkedin.com/company/tecvix-engenharia/" target="_blank" rel="noopener noreferrer">TECVIX Engenharia</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ISO Certification Seal -->
+                    <div style="margin-top: 2rem; display: flex; align-items: center;">
+                        <img src="assets/iso_certification.png" alt="Certificação IATF 16949 ABS Quality Evaluations" class="contact-iso-seal" style="height: 80px; width: auto; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));">
+                    </div>
+                    
+                </div>
+                
+                <!-- Form Column -->
+                <div class="contact-form-container">
+                    <form id="form-contato" action="https://formsubmit.co/tecvix@texvixengenharia.com" method="POST" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder=" " required autocomplete="name">
+                            <label for="name" class="form-label">Nome Completo</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" placeholder=" " required autocomplete="email">
+                            <label for="email" class="form-label">E-mail Corporativo</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="form-input" placeholder=" " required autocomplete="tel">
+                            <label for="phone" class="form-label">Telefone / WhatsApp</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Descreva brevemente sua demanda técnica</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+                        
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <a href="#home" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/logo.png" alt="Logo TECVIX Engenharia" class="logo-img">
+                    </a>
+                    <p>Qualidade, prazo e segurança operacional em engenharia, reparo naval e manutenção industrial offshore.</p>
+                    <div class="footer-socials">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/tecvixengenharia/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/tecvix-engenharia/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/5521995310777" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19.005 3.175C17.252 1.42 14.927.453 12.443.453c-4.838 0-8.773 3.935-8.775 8.777 0 1.547.404 3.056 1.171 4.386L3.66 20l6.305-1.654a8.736 8.736 0 004.254 1.11h.004c4.837 0 8.773-3.936 8.775-8.779a8.72 8.72 0 00-2.5-6.223h-.002zM12.443 16.59c-1.31 0-2.597-.352-3.722-1.018l-.267-.159-3.743.981.999-3.649-.174-.277a7.294 7.294 0 01-1.116-3.89c.002-4.02 3.273-7.292 7.296-7.292 1.948 0 3.779.758 5.155 2.136a7.24 7.24 0 012.13 5.16c-.002 4.022-3.273 7.294-7.298 7.294zm3.999-5.467c-.22-.11-1.299-.64-1.5-.714-.202-.074-.349-.11-.497.11-.148.22-.574.714-.704.864-.13.15-.26.166-.48.056-.22-.11-.929-.342-1.77-1.091-.653-.583-1.093-1.303-1.222-1.522-.13-.22-.014-.339.096-.449.1-.1.22-.256.33-.383.11-.127.147-.22.22-.365.074-.146.037-.274-.018-.384-.056-.11-.497-1.2-.68-1.643-.18-.432-.377-.373-.497-.379-.12-.006-.259-.007-.397-.007-.139 0-.365.052-.556.26-.191.208-.73.714-.73 1.743 0 1.03.749 2.02.855 2.166.107.146 1.474 2.25 3.57 3.153.499.215.888.343 1.192.44.502.159.96.137 1.32.083.402-.06 1.299-.53 1.482-1.042.18-.512.18-.952.127-1.042-.054-.09-.202-.146-.422-.256z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#servicos">Nossos Serviços</a></li>
+                        <li><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Normas & Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">NR-10 (Elétrica)</a></li>
+                        <li><a href="#servicos">NR-12 (Máquinas)</a></li>
+                        <li><a href="#servicos">NR-13 (Pressão & Vapor)</a></li>
+                        <li><a href="#servicos">Arquitetura & Caldeiraria Naval</a></li>
+                        <li><a href="#servicos">Inspeção de Máquinas</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TECVIX Engenharia. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <span style="display: flex; align-items: center; gap: 0.5rem;">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="color: var(--color-accent);">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                        Sistema de Gestão ISO 9001
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SVG Filter for 3D Line Drawing / Blueprint Edge Effect -->
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0">
+        <filter id="blueprint-wireframe">
+            <!-- 1. Convert to Grayscale -->
+            <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0
+                                                 0.2126 0.7152 0.0722 0 0
+                                                 0.2126 0.7152 0.0722 0 0
+                                                 0      0      0      1 0" result="gray"/>
+            <!-- 2. Edge Detection using Laplacian Filter -->
+            <feConvolveMatrix order="3" kernelMatrix="-2.0 -2.0 -2.0
+                                                      -2.0  16   -2.0
+                                                      -2.0 -2.0 -2.0" preserveAlpha="true" in="gray" result="edges"/>
+            <!-- 3. Make lines glow (Blur + Amplification) -->
+            <feGaussianBlur stdDeviation="1.5" in="edges" result="blur"/>
+            <feComponentTransfer in="blur" result="glow">
+                <feFuncA type="linear" slope="2.5"/>
+            </feComponentTransfer>
+            <!-- 4. Merge clean lines and soft glow -->
+            <feMerge result="glow-lines">
+                <feMergeNode in="glow"/>
+                <feMergeNode in="edges"/>
+            </feMerge>
+            <!-- 5. Tint background to deep navy (#03070f) and edges to glowing white/cyan -->
+            <feColorMatrix type="matrix" values="-0.01   0     0     0   0.01
+                                                  0      0.82  0     0   0.03
+                                                  0      0     0.96  0   0.05
+                                                  0      0     0     1   0" in="glow-lines"/>
+        </filter>
+    </svg>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5521995310777" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M19.005 3.175C17.252 1.42 14.927.453 12.443.453c-4.838 0-8.773 3.935-8.775 8.777 0 1.547.404 3.056 1.171 4.386L3.66 20l6.305-1.654a8.736 8.736 0 004.254 1.11h.004c4.837 0 8.773-3.936 8.775-8.779a8.72 8.72 0 00-2.5-6.223h-.002zM12.443 16.59c-1.31 0-2.597-.352-3.722-1.018l-.267-.159-3.743.981.999-3.649-.174-.277a7.294 7.294 0 01-1.116-3.89c.002-4.02 3.273-7.292 7.296-7.292 1.948 0 3.779.758 5.155 2.136a7.24 7.24 0 012.13 5.16c-.002 4.022-3.273 7.294-7.298 7.294zm3.999-5.467c-.22-.11-1.299-.64-1.5-.714-.202-.074-.349-.11-.497.11-.148.22-.574.714-.704.864-.13.15-.26.166-.48.056-.22-.11-.929-.342-1.77-1.091-.653-.583-1.093-1.303-1.222-1.522-.13-.22-.014-.339.096-.449.1-.1.22-.256.33-.383.11-.127.147-.22.22-.365.074-.146.037-.274-.018-.384-.056-.11-.497-1.2-.68-1.643-.18-.432-.377-.373-.497-.379-.12-.006-.259-.007-.397-.007-.139 0-.365.052-.556.26-.191.208-.73.714-.73 1.743 0 1.03.749 2.02.855 2.166.107.146 1.474 2.25 3.57 3.153.499.215.888.343 1.192.44.502.159.96.137 1.32.083.402-.06 1.299-.53 1.482-1.042.18-.512.18-.952.127-1.042-.054-.09-.202-.146-.422-.256z"/>
+        </svg>
+    </a>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
