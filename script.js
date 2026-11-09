@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Header Style & Active Nav Links on Scroll
     const header = document.getElementById('header');
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section[id]');
 
     const handleScroll = () => {
         // Toggle header scrolled appearance
@@ -23,16 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Detect active section and update navigation highlight
-        let currentSectionId = '';
-        const scrollPosition = window.scrollY + 120; // offset for header height
+        let currentSectionId = 'home';
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                currentSectionId = section.getAttribute('id');
-            }
-        });
+        if (window.scrollY >= 200) {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 160) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+        }
 
         navLinks.forEach(link => {
             link.classList.remove('active');
@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
     handleScroll(); // run once on init
 
     // 3. Mobile Navigation Menu Toggle
@@ -115,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. Scroll Reveal Effect (IntersectionObserver)
     const revealOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px'
     };
 
     const revealCallback = (entries, observer) => {
@@ -134,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const elementsToReveal = [
         document.querySelector('.about-text'),
         document.querySelector('.about-visual'),
-        document.querySelector('.services-tabs-container'),
         document.querySelector('.contact-info'),
         document.querySelector('.contact-form-container')
     ];
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setSubmitLoading(true);
             
             try {
-                const response = await fetch('https://formsubmit.co/ajax/tecvix@texvixengenharia.com', {
+                const response = await fetch('https://formsubmit.co/ajax/tecvix@tecvixengenharia.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
